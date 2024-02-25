@@ -1,1 +1,3 @@
-Add model repository named "model_stog" inside this repository.
+Add model repository named "model_stog" inside this repository:
+
+https://github.com/bjascob/amrlib-models/releases/download/parse_xfm_bart_base-v0_1_0/model_parse_xfm_bart_base-v0_1_0.tar.gz
