@@ -57,11 +57,13 @@ print("Parsing AMRs...")
 import amrlib as amr
 import spacy
 
+# sentence segmentation
 doc = spacy.load("en_core_web_sm")(res)
 sentences = list()
 for sent in doc.sents:
     sentences.append(re.sub(r"\n", "", sent.text))
 
+# semantic parsing
 model = amr.load_stog_model("resources/model_stog")
 query_amr = model.parse_sents([query])[0]
 search_amrs = model.parse_sents(sentences[:10])
