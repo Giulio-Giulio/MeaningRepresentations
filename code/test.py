@@ -30,7 +30,6 @@ link = first_item.get("link")
 print("Scraping Wikipedia article...")
 from bs4 import BeautifulSoup
 import regex as re
-import spacy
 
 page = requests.get(link)
 soup = BeautifulSoup(page.content, "html.parser")
@@ -52,15 +51,16 @@ for element in r:
 #get rid of reference links
 res = re.sub(r'\[(\d+|update|citation needed)\]', '', ref_res)
 
+
+# AMR
+print("Parsing AMRs...")
+import amrlib as amr
+import spacy
+
 doc = spacy.load("en_core_web_sm")(res)
 sentences = list()
 for sent in doc.sents:
     sentences.append(re.sub(r"\n", "", sent.text))
-   
-    
-# AMR
-print("Parsing AMRs...")
-import amrlib as amr
 
 model = amr.load_stog_model("resources/model_stog")
 query_amr = model.parse_sents([query])[0]
