@@ -14,6 +14,7 @@ class WikiSearcher:
         self.search_engine_id = search_engine_id
         self.api_key = api_key
     
+    
     def search(self, query, i=0, scrape=True):
         """
         Performs a search with Google's Custom Search API on
@@ -37,6 +38,7 @@ class WikiSearcher:
             return first_result_url, self.scrape(first_result_url)
         else:
             return first_result_url
+    
     
     def scrape(self, url):
         """
