@@ -15,9 +15,9 @@ def app():
             exit(0)
         
         # get results
-        sys.stdout = open(os.devnull, 'w') # disable writing to stdout (printing) FIXME
-        results = SemReply.ask(question)
-        sys.stdout = sys.__stdout__ # enable writing to stdout FIXME
+        # sys.stdout = open(os.devnull, 'w') # disable writing to stdout (printing) FIXME
+        results = SemReply.ask(question, n_answers=10, n_sentences=-1)
+        # sys.stdout = sys.__stdout__ # enable writing to stdout FIXME
         
         # print results
         for i, result in enumerate(results):

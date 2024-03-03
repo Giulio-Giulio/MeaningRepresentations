@@ -87,3 +87,7 @@ for i, _ in top_matches:
     print(sentences[i])
     
 # TODO filter out sentences that do not contain the unknown (e.g. )
+# https://github.com/SapienzaNLP/spring 
+
+# scrematura frasi
+# parse della domanda -> estrazione del predicate dell'amr-unknown e dei suoi "sibling"
