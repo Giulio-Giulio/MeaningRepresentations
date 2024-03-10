@@ -72,4 +72,4 @@ class WikiSearcher:
                 else: continue
             text += '\n' + ''.join(element.findAll(string = True))
         # remove reference links
-        return re.sub(r'\[(\d+|update|citation needed)\]', '', text)
+        return re.sub(r'\[(\d+|update|citation needed|N \d+)\]', '', text)
