@@ -4,5 +4,8 @@
 - Sentence skimming
   - propbank frames do not include named entities
   - extract topical lemmas from question. Extact lemmas from sentences. Take sentences where the intersection of their lemmas with the question's (initially we wanted to do with propbank concept frames)
-  - lemmatization does not account for inter-grammatical-class morphology (invent -> inventor / invention), synonyms and anaphora on pronouns
+  - lemmatization does not account for inter-grammatical-class morphology (invent -> inventor / invention - Italy -> Italian), synonyms and anaphora on pronouns
   - multi-word expressions
+
+
+1. Introduction
