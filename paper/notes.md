@@ -1,5 +1,5 @@
 - Use the amr-unknown to filter of already-parsed results
-- Mention lack of pragmatics as a hindrance to address the questions
+- Mention lack of pragmatics as a hindrance to address the questions (implication)
 - Anaphora resolution (AMRdoc)
 - Sentence skimming
   - propbank frames do not include named entities
