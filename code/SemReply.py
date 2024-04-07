@@ -47,12 +47,13 @@ class SemReply:
         # compute smatch F score between question and sentences
         return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
 
+
     def score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores):
         # sentences -> AMRs
-        print("Parsing AMRs...", end="", flush=True)
+        print("Parsing AMRs...")
         search_amrs = model.parse_sents(sentences[:n_sentences])
         # compute smatch F score between question and sentences
-        print("Computing SMATCH scores...", end="")
+        print("Computing SMATCH scores...")
         sent2f = dict() # sentence idx to F score
         for i, search_amr in enumerate(search_amrs):
             search_amr = " ".join(search_amr.split("\n")[1:]) # remove initial comment line
@@ -65,6 +66,7 @@ class SemReply:
             return [(sentences[i], f) for i, f in top_matches]
         else:
             return [sentences[i] for i, _ in top_matches]
+    
     
     def _segment_sentences(text):
         """
