@@ -61,8 +61,10 @@ class WikiSearcher:
             table.decompose()
         for style in soup("style"):
             style.decompose()
-        for ipa in soup({"class" : "IPA"}):
+        for ipa in soup.find_all("span", {"class" : "IPA"}):
+            print(ipa)
             ipa.decompose()
+
         # extract p, li and h2 elements
         r = soup.find("div", {"class" : "mw-content-ltr mw-parser-output" }).findAll(["p", "li", "h2"])
         # convert to string
