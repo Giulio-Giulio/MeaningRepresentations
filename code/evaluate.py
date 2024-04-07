@@ -16,7 +16,7 @@ results = dict()
 for FILE in FILES:
     gold_scores = dict()
     sentences = list()
-    lines = open(FILE, "r", encoding="utf-8")
+    lines = open(DIRECTORY+"/"+FILE, "r", encoding="utf-8")
     question = next(lines).strip()
     for i, line in enumerate(lines):
         score, sentence = line.strip().split(",", 1)
