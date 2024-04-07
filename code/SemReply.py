@@ -33,7 +33,6 @@ class SemReply:
         """
         # search, scrape, and segment wiki article
         print("Retrieving wiki article...", end="")
-        start = time()
         searcher = WikiSearcher()
         url, text = searcher.search(question)
         sentences = SemReply._segment_sentences(text)
@@ -45,28 +44,29 @@ class SemReply:
         # lemma-based skimming of the sentences
         if skim_sentences:
             sentences = SemReply._skim_sentences(sentences, query_amr)
-        # sentences -> AMRs
-        print("Parsing AMRs...", end="", flush=True)
-        start = time()
-        search_amrs = model.parse_sents(sentences[:n_sentences])
-        print(f"\rParsed AMRs in {round(time() - start, 2)} seconds")
         # compute smatch F score between question and sentences
-        print("Computing SMATCH scores...", end="")
-        start = time()
+        return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
+
+
+    def score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores):
+        # sentences -> AMRs
+        print("Parsing AMRs...")
+        search_amrs = model.parse_sents(sentences[:n_sentences])
+        # compute smatch F score between question and sentences
+        print("Computing SMATCH scores...")
         sent2f = dict() # sentence idx to F score
         for i, search_amr in enumerate(search_amrs):
             search_amr = " ".join(search_amr.split("\n")[1:]) # remove initial comment line
             best_match_num, test_triple_num, gold_triple_num = smatch.get_amr_match(query_amr, search_amr)
             f_score = smatch.compute_f(best_match_num, test_triple_num, gold_triple_num)
             sent2f.update({i: f_score})
-        print(f"\rComputed SMATCH scores in {round(time() - start)} seconds")
         # rank article sentences based on F score
-        top_matches = sorted(sent2f.items(), key=lambda x: x[1], reverse=True)[:n_answers]
+        top_matches = sorted(sent2f.items(), key=lambda x: x[1][2], reverse=True)[:n_answers]
         if return_scores:
             return [(sentences[i], f) for i, f in top_matches]
         else:
             return [sentences[i] for i, _ in top_matches]
-
+    
     
     def _segment_sentences(text):
         """
