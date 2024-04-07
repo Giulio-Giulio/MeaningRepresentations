@@ -34,4 +34,4 @@ for FILE in FILES:
 
     results[FILE] = ndcg_score([gold[:N_SENTENCES]], [predictions[:N_SENTENCES]])
 
-
+print(results)
