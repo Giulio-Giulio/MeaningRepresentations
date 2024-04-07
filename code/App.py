@@ -7,7 +7,7 @@ def app():
     """
     Terminal interface for SemReply.
     """
-    prompt = "Who invented the telephone?"
+    prompt = "x"
     while prompt.strip():
         # prompt user
         question = input("\nAsk a question about a famous person, event, place, or anything:\n")
