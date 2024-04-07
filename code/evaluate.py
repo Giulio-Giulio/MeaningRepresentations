@@ -13,7 +13,7 @@ FILES = [os.fsdecode(file) for file in os.listdir(DIRECTORY)]
 N_SENTENCES = 10
 
 results = dict()
-for FILE in zip(FILES:
+for FILE in FILES:
     gold_scores = dict()
     sentences = list()
     lines = open(FILE, "r", encoding="utf-8")
