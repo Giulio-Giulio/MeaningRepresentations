@@ -15,7 +15,7 @@ class SemReply:
     representations (AMRs).
     """
     
-    def ask(question, n_answers=5, n_sentences=10, skim_sentences=False):
+    def ask(question, n_answers=5, n_sentences=10, return_scores=False, skim_sentences=False):
         """
         Takes in a question, searches a Wikipedia article about it,
         and parses the article into AMRs (semantic representations)
@@ -62,7 +62,10 @@ class SemReply:
         print(f"\rComputed SMATCH scores in {round(time() - start)} seconds")
         # rank article sentences based on F score
         top_matches = sorted(sent2f.items(), key=lambda x: x[1], reverse=True)[:n_answers]
-        return [sentences[i] for i, _ in top_matches]
+        if return_scores:
+            return [(sentences[i], f) for i, f in top_matches]
+        else:
+            return [sentences[i] for i, _ in top_matches]
 
     
     def _segment_sentences(text):
