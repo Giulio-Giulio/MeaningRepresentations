@@ -1,0 +1,21 @@
+What is the Fibonacci sequence?
+2," In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones."
+0,"Numbers that are part of the Fibonacci sequence are known as Fibonacci numbers, commonly denoted Fn ."
+0,"The sequence commonly starts from 0 and 1, although some authors start the sequence from 1 and 1 or sometimes (as did Fibonacci) from 1 and 2."
+0,"Starting from 0 and 1, the sequence begins The Fibonacci numbers were first described in Indian mathematics as early as 200 BC in work by Pingala on enumerating possible patterns of Sanskrit poetry formed from syllables of two lengths."
+0,"They are named after the Italian mathematician Leonardo of Pisa, also known as Fibonacci, who introduced the sequence to Western European mathematics in his 1202 book Liber Abaci. "
+0,"Fibonacci numbers appear unexpectedly often in mathematics, so much so that there is an entire journal dedicated to their study, the Fibonacci Quarterly."
+0,"Applications of Fibonacci numbers include computer algorithms such as the Fibonacci search technique and the Fibonacci heap data structure, and graphs called Fibonacci cubes used for interconnecting parallel and distributed systems."
+0,"They also appear in biological settings, such as branching in trees, the arrangement of leaves on a stem, the fruit sprouts of a pineapple, the flowering of an artichoke, and the arrangement of a pine cone's bracts, though they do not occur in all species. "
+0,"Fibonacci numbers are also strongly related to the golden ratio: Binet's formula expresses the n-th Fibonacci number in terms of n and the golden ratio, and implies that the ratio of two consecutive Fibonacci numbers tends to the golden ratio as n increases."
+0,"Fibonacci numbers are also closely related to Lucas numbers, which obey the same recurrence relation and with the Fibonacci numbers form a complementary pair of Lucas sequences. "
+0,"The Fibonacci numbers may be defined by the recurrence relation F 0 = 0 , F 1 = 1 , {\displaystyle F_{0}=0,\quad F_{1}=1,} and F n = F n − −  1 + F n − −  2 {\displaystyle F_{n}=F_{n-1}+F_{n-2}} for n > 1. "
+0,"Under some older definitions, the value  F 0 = 0 {\displaystyle F_{0}=0}  is omitted, so that the sequence starts with  F "
+0,"1 = F 2 = 1 , {\displaystyle F_{1}=F_{2}=1,}  and the recurrence  F n = F n − −  1 + F n − −  2 {\displaystyle F_{n}=F_{n-1}+F_{n-2}}  is valid for n > 2. The first 20 Fibonacci numbers Fn are: "
+1,"The Fibonacci sequence appears in Indian mathematics, in connection with Sanskrit prosody."
+0,"In the Sanskrit poetic tradition, there was interest in enumerating all patterns of long (L) syllables of 2 units duration, juxtaposed with short (S) syllables of 1 unit duration."
+0,Counting the different patterns of successive L and S with a given total duration results in the Fibonacci numbers: the number of patterns of duration m units is Fm+1. 
+ß,Knowledge of the Fibonacci sequence was expressed as early as Pingala (c. 450 BC–200 BC).
+0,"Singh cites Pingala's cryptic formula misrau cha ('the two are mixed') and scholars who interpret it in context as saying that the number of patterns for m beats (Fm+1) is obtained by adding one"
+0,[S] to the Fm cases and one
+0,[L] to the Fm−1 cases.

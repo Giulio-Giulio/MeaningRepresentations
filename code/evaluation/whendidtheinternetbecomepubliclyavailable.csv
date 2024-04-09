@@ -1,0 +1,21 @@
+When did the internet become publicly available?
+0, The history of the Internet has its origin in the efforts of scientists and engineers to build and interconnect computer networks.
+0,"The Internet Protocol Suite, the set of rules used to communicate between networks and devices on the Internet, arose from research and development in the United States and involved international collaboration, particularly with researchers in the United Kingdom and France. "
+1,"Computer science was an emerging discipline in the late 1950s that began to consider time-sharing between computer users, and later, the possibility of achieving this over wide area networks."
+0,J. C. R. Licklider developed the idea of a universal network at the Information Processing Techniques Office (IPTO) of the United States Department of Defense (DoD) Advanced Research Projects Agency (ARPA).
+1,"Independently, Paul Baran at the RAND Corporation proposed a distributed network based on data in message blocks in the early 1960s, and Donald Davies conceived of packet switching in 1965 at the National Physical Laboratory (NPL), proposing a national commercial data network in the United Kingdom. "
+0,"ARPA awarded contracts in 1969 for the development of the ARPANET project, directed by Robert Taylor and managed by Lawrence Roberts."
+0,ARPANET adopted the packet switching technology proposed by Davies and Baran.
+0,"The network of Interface Message Processors was built by a team at Bolt, Beranek, and Newman, with the design and specification led by Bob Kahn."
+0,"The host-to-host protocol was specified by a group of graduate students at UCLA, led by Steve Crocker, along with Jon Postel and Vint Cerf."
+1,The ARPANET expanded rapidly across the United States with connections to the United Kingdom and Norway. 
+0,Several early packet-switched networks emerged in the 1970s which researched and provided data networking.
+0,Louis Pouzin and Hubert Zimmermann pioneered a simplified end-to-end approach to internetworking at the IRIA.
+1,Peter Kirstein at University College London put internetworking into practice in 1973.
+0,Bob Metcalfe developed the theory behind Ethernet and PARC Universal Packet.
+0,"ARPA projects, the International Network Working Group and commercial initiatives led to the development of various ideas for internetworking, in which multiple separate networks could be joined into a network of networks."
+0,"Vint Cerf, now at Stanford University, and Bob Kahn, now at DARPA, published research in 1974 that evolved into the Transmission Control Protocol (TCP) and Internet Protocol (IP), two protocols of the Internet protocol suite."
+0,The design included concepts from the French CYCLADES project directed by Louis Pouzin.
+0,The development of packet switching networks was underpinned by mathematical work in the 1970s by Leonard Kleinrock at UCLA. 
+0,"In the late 1970s, national and international public data networks emerged based on the X.25 protocol, designed by Rémi Després and others."
+1,"In the United States, the National Science Foundation (NSF) funded national supercomputing centers at several universities in the United States, and provided interconnectivity in 1986 with the NSFNET project, thus creating network access to these supercomputer sites for research and academic organizations in the United States."
