@@ -1,0 +1,21 @@
+When was the first computer virus discovered?
+0," A computer virus is a type of malware that, when executed, replicates itself by modifying other computer programs and inserting its own code into those programs."
+0,"If this replication succeeds, the affected areas are then said to be 'infected' with a computer virus, a metaphor derived from biological viruses. "
+0,Computer viruses generally require a host program.
+0,The virus writes its own code into the host program.
+0,"When the program runs, the written virus program is executed first, causing infection and damage."
+0,"By contrast, a computer worm does not need a host program, as it is an independent program or code chunk."
+0,"Therefore, it is not restricted by the host program, but can run independently and actively carry out attacks. "
+0,Virus writers use social engineering deceptions and exploit detailed knowledge of security vulnerabilities to initially infect systems and to spread the virus.
+0,Viruses use complex anti-detection/stealth strategies to evade antivirus software.
+0,"Motives for creating viruses can include seeking profit (e.g., with ransomware), desire to send a political message, personal amusement, to demonstrate that a vulnerability exists in software, for sabotage and denial of service, or simply because they wish to explore cybersecurity issues, artificial life and evolutionary algorithms. "
+0,"As of 2013, computer viruses caused billions of dollars' worth of economic damage each year."
+0,"In response, an industry of antivirus software has cropped up, selling or freely distributing virus protection to users of various operating systems. "
+2,"The first academic work on the theory of self-replicating computer programs was done in 1949 by John von Neumann who gave lectures at the University of Illinois about the 'Theory and Organization of Complicated Automata'."
+0,"The work of von Neumann was later published as the 'Theory of self-reproducing automata'."
+0,In his essay von Neumann described how a computer program could be designed to reproduce itself.
+1,"Von Neumann's design for a self-reproducing computer program is considered the world's first computer virus, and he is considered to be the theoretical 'father' of computer virology."
+1,"In 1972, Veith Risak directly building on von Neumann's work on self-replication, published his article 'Selbstreproduzierende Automaten mit minimaler Informationsübertragung' (Self-reproducing automata with minimal information exchange)."
+0,The article describes a fully functional virus written in assembler programming language for a SIEMENS 4004/35 computer system.
+0,"In 1980, Jürgen Kraus wrote his Diplom thesis 'Selbstreproduktion bei Programmen' (Self-reproduction of programs) at the University of Dortmund."
+0,In his work Kraus postulated that computer programs can behave in a way similar to biological viruses. 

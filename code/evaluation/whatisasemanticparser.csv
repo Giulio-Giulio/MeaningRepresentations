@@ -1,0 +1,21 @@
+what is a semantic parser?
+ 1, Semantic parsing is the task of converting a natural language utterance to a logical form: a machine-understandable representation of its meaning.
+ 2,Semantic parsing can thus be understood as extracting the precise meaning of an utterance.
+ 1,"Applications of semantic parsing include machine translation, question answering, ontology induction, automated reasoning, and code generation."
+ 0,The phrase was first used in the 1970s by Yorick Wilks as the basis for machine translation programs working with only semantic representations.
+ 1,Semantic parsing is one of the important tasks in computational linguistics and natural language processing. 
+ 2,Semantic parsing maps text to formal meaning representations.
+ 0,"This contrasts with semantic role labeling and other forms of shallow semantic processing, which do not aim to produce complete formal meanings. "
+ 2,"In computer vision, semantic parsing is a process of segmentation for 3D objects. "
+ 0,Early research of semantic parsing included the generation of grammar manually  as well as utilizing applied programming logic.
+ 0,"In the 2000s, most of the work in this area involved the creation/learning and use of different grammars and lexicons on controlled tasks, particularly general grammars such as SCFGs."
+ 0,"This improved upon manual grammars primarily because they leveraged the syntactical nature of the sentence, but they still couldn’t cover enough variation and weren’t robust enough to be used in the real world."
+ 0,"However, following the development of advanced neural network techniques, especially the Seq2Seq model, and the availability of powerful computational resources, neural semantic parsing started emerging."
+ 0,"Not only was it providing competitive results on the existing datasets, but it was robust to noise and did not require a lot of supervision and manual intervention. "
+ 0,The current transition of traditional parsing to neural semantic parsing has not been perfect though.
+ 0,"Neural semantic parsing, even with its advantages, still fails to solve the problem at a deeper level."
+ 0,"Neural models like Seq2Seq treat the parsing problem as a sequential translation problem, and the model learns patterns in a black-box manner, which means we cannot really predict whether the model is truly solving the problem."
+ 0,"Intermediate efforts and modifications to the Seq2Seq to incorporate syntax and semantic meaning have been attempted, with a marked improvement in results, but there remains a lot of ambiguity to be taken care of. "
+ 0,Shallow semantic parsing is concerned with identifying entities in an utterance and labelling them with the roles they play.
+ 0,"Shallow semantic parsing is sometimes known as slot-filling or frame semantic parsing, since its theoretical basis comes from frame semantics, wherein a word evokes a frame of related concepts and roles."
+ 0,"Slot-filling systems are widely used in virtual assistants in conjunction with intent classifiers, which can be seen as mechanisms for identifying the frame evoked by an utterance."
