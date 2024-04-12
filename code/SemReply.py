@@ -36,7 +36,6 @@ class SemReply:
         searcher = WikiSearcher()
         url, text = searcher.search(question)
         sentences = SemReply._segment_sentences(text)
-        print(f"\rRetrieved content of {url} in {round(time() - start)} seconds")
         # question -> AMR
         model = amrlib.load_stog_model("resources/model_stog")
         query_amr = model.parse_sents([question])[0]

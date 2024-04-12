@@ -23,3 +23,9 @@
 6. Conclusion
   - we showed how MRs can be useful for...
   - due to the challenges we faced, it is hard to tell whether meaning representations can take over LLMs for such applications. An interesting scenario to further explore would take into account hybrid systems where LLMs and MRs come together to accomplish such tasks taking the best of each technology. (cite some studies that do so)
+
+
+Meeting: 
+- PropBank concept to lemmas database
+- Preparse of data (wikipedia)
+- Lemma-ranked skimming
