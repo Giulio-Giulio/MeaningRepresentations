@@ -2,15 +2,15 @@ from SemReply import SemReply
 
 import amrlib
 from sklearn.metrics import ndcg_score
-import matplotlib.pyplot as plt
-from matplotlib.ticker import MaxNLocator
 from time import time
 import os
 
 
-DIRECTORY = "evaluation"
+DIRECTORY = "evaluation items"
 FILES = [os.fsdecode(file) for file in os.listdir(DIRECTORY)]
+OUTPUT_FILE = open("evaluation_baseline_20.txt", "a", encoding="utf-8")
 N_SENTENCES = 10
+
 
 results = dict()
 for FILE in FILES:
@@ -18,6 +18,7 @@ for FILE in FILES:
     sentences = list()
     lines = open(DIRECTORY+"/"+FILE, "r", encoding="utf-8")
     question = next(lines).strip()
+    print(question)
     for i, line in enumerate(lines):
         score, sentence = line.strip().split(",", 1)
         sentences.append(sentence)
@@ -33,5 +34,8 @@ for FILE in FILES:
         gold.append(gold_scores[sentences.index(sentence)])
 
     results[FILE] = ndcg_score([gold[:N_SENTENCES]], [predictions[:N_SENTENCES]])
+    OUTPUT_FILE.write(question+"\n")
+    OUTPUT_FILE.write(str(results[FILE])+"\n\n")
+    
 
 print(results)
