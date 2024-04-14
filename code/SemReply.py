@@ -15,7 +15,7 @@ class SemReply:
     representations (AMRs).
     """
     
-    def ask(question, n_answers=5, n_sentences=10, return_scores=False, skim_sentences=False):
+    def ask(question, n_answers=5, n_sentences=10, return_scores=False, skim=False, prerank=False):
         """
         Takes in a question, searches a Wikipedia article about it,
         and parses the article into AMRs (semantic representations)
@@ -26,7 +26,8 @@ class SemReply:
             question (str): question or query.
             n_answers (int, optional): how many sentences should be returned. Defaults to 5.
             n_sentences (int, optional): how many sentences from the article will be parsed. Defaults to 20.
-            skim_sentences(bool, optional): whether to do an initial skimming of the sentences based on lemma matching. Defaults to False.
+            skim(bool, optional): whether to do an initial skimming of the sentences based on lemma matching. Defaults to False.
+            prerank(bool, optional): whether to do an initial preranking of the sentences based on lemma matching. Defaults to False.
 
         Returns:
             list: list of top sentences answering the question.
@@ -41,8 +42,12 @@ class SemReply:
         query_amr = model.parse_sents([question])[0]
         query_amr = " ".join(query_amr.split("\n")[1:]) # remove initial comment line
         # lemma-based skimming of the sentences
-        if skim_sentences:
+        if skim and prerank:
+            print("Please choose only one option between skimming and preranking")
+        elif skim:
             sentences = SemReply._skim_sentences(sentences, query_amr)
+        elif prerank:
+            sentences = SemReply._prerank_sentences(sentences, query_amr)
         # compute smatch F score between question and sentences
         return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
 
@@ -91,7 +96,14 @@ class SemReply:
         print(len(sentences))
         print(len(skimmed_sentences))
         return skimmed_sentences
-
+    
+    
+    def _prerank_sentences(sentences, query_amr, n_output=10):
+        sentence_lemmas = [(sentence, SemReply._extract_sentence_lemmas(sentence)) for sentence in sentences]
+        query_lemmas = SemReply._extract_query_main_lemmas(query_amr)
+        top_sentences = sorted(sentence_lemmas, key=lambda x: len(query_lemmas.intersection(x[1])), reverse=True)
+        return [x[0] for x in top_sentences][:n_output]
+    
 
     def _extract_query_main_lemmas(query_amr_str):
         query_amr_line = amr.AMR.get_amr_line(query_amr_str.split("\n"))
