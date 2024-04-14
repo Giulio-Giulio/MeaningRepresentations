@@ -1,0 +1,90 @@
+What are the ingredients for pizza?
+0.28906482631788766
+
+what are the causes of second world war?
+0.579551054425093
+
+what are the main fields of linguistics?
+0.4508127288256948
+
+what is a semantic parser?
+0.9901538905182091
+
+What is a software?
+0.7401631210044233
+
+what is python?
+0.8700592720921219
+
+What is Semantic?
+0.7762104284715952
+
+"what is the aurora borealis?,"
+0.5926739595777415
+
+What is the concept of inertia in physics?
+0.6906681676815836
+
+What is the Fibonacci sequence?
+1.0
+
+What is the millennium bug?
+0.3333333333333335
+
+what is the most sold music album?
+0.0
+
+When did humans first land on the Moon?
+0.8315546295836228
+
+When did the berlin wall fall?
+0.5
+
+When did the Industrial Revolution begin?
+0.4418145753351433
+
+When did the internet become publicly available?
+0.5881601264058985
+
+When did the Protestant Reformation begin?
+0.3632675831375429
+
+When did World War II end?
+0.6309297535714573
+
+When was the car invented?
+0.5562746924797206
+
+When was the Declaration of Independence signed?
+0.8056715585172461
+
+When was the fall of the Roman Empire?
+0.0
+
+When was the first computer virus discovered?
+0.0
+
+When was the first modern Olympic Games held?
+1.0
+
+When was the first vaccine developed?
+0.6309297535714573
+
+When was the invention of the printing press?
+0.41782460362476176
+
+When was the start of the Great Depression?
+0.6199062332840659
+
+Where is Sicily?
+0.522419444637392
+
+Where is the Colosseum?
+0.3396497106045723
+
+Who invented the telephone?
+0.43062411638656717
+
+Who is Tom Riddle?
+1.0
+
