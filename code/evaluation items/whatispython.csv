@@ -1,0 +1,21 @@
+what is python?
+2," Python is a high-level, general-purpose programming language."
+0,Its design philosophy emphasizes code readability with the use of significant indentation. 
+0,Python is dynamically typed and garbage-collected.
+0,"It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming."
+1,"It is often described as a 'batteries included' language due to its comprehensive standard library. "
+0,Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.
+0,Python 2.0 was released in 2000.
+0,"Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions."
+0,"Python 2.7.18, released in 2020, was the last release of Python 2. Python consistently ranks as one of the most popular programming languages, and has gained widespread use in the machine learning community. "
+0,"Python was invented in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of exception handling and interfacing with the Amoeba operating system."
+0,Its implementation began in December 1989.
+0,"Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018, when he announced his 'permanent vacation' from his responsibilities as Python's 'benevolent dictator for life', a title the Python community bestowed upon him to reflect his long-term commitment as the project's chief decision-maker."
+0,"In January 2019, active Python core developers elected a five-member Steering Council to lead the project. "
+0,"Python 2.0 was released on 16 October 2000, with many major new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support."
+0,"Python 3.0, released on 3 December 2008, with many of its major features backported to Python 2.6.x and 2.7.x."
+0,"Releases of Python 3 include the 2to3 utility, which automates the translation of Python 2 code to Python 3. "
+0,"Python 2.7's end-of-life was initially set for 2015, then postponed to 2020 out of concern that a large body of existing code could not easily be forward-ported to Python 3."
+0,No further security patches or other improvements will be released for it.
+0,"Currently only 3.8 and later are supported (2023 security issues were fixed in e.g. 3.7.17, the final 3.7.x release)."
+0,"While Python 2.7 and older is officially unsupported, a different unofficial Python implementation, PyPy, continues to support Python 2, i.e. '2.7.18+' (plus 3.9 and 3.10), with the plus meaning (at least some) 'backported security updates'. "

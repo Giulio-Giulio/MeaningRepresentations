@@ -15,7 +15,7 @@ What is the Fibonacci sequence?
 1,"The Fibonacci sequence appears in Indian mathematics, in connection with Sanskrit prosody."
 0,"In the Sanskrit poetic tradition, there was interest in enumerating all patterns of long (L) syllables of 2 units duration, juxtaposed with short (S) syllables of 1 unit duration."
 0,Counting the different patterns of successive L and S with a given total duration results in the Fibonacci numbers: the number of patterns of duration m units is Fm+1. 
-ß,Knowledge of the Fibonacci sequence was expressed as early as Pingala (c. 450 BC–200 BC).
+0,Knowledge of the Fibonacci sequence was expressed as early as Pingala (c. 450 BC–200 BC).
 0,"Singh cites Pingala's cryptic formula misrau cha ('the two are mixed') and scholars who interpret it in context as saying that the number of patterns for m beats (Fm+1) is obtained by adding one"
 0,[S] to the Fm cases and one
 0,[L] to the Fm−1 cases.
