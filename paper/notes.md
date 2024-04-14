@@ -29,3 +29,4 @@ Meeting:
 - PropBank concept to lemmas database
 - Preparse of data (wikipedia)
 - Lemma-ranked skimming
+- Lemma from question rather than AMR extraction
