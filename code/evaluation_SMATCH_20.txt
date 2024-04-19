@@ -1,0 +1,90 @@
+What are the ingredients for pizza?
+NDCG: 0.23981246656813138 - Time: 121.44608402252197 seconds
+
+what are the causes of second world war?
+NDCG: 0.565082158131454 - Time: 122.37956833839417 seconds
+
+what are the main fields of linguistics?
+NDCG: 0.4893204231568798 - Time: 85.80064821243286 seconds
+
+what is a semantic parser?
+NDCG: 0.8672164093025565 - Time: 61.0780725479126 seconds
+
+What is a software?
+NDCG: 0.6657422019901629 - Time: 144.97011971473694 seconds
+
+what is python?
+NDCG: 0.8481329500077639 - Time: 130.43002724647522 seconds
+
+What is Semantic?
+NDCG: 0.6327398762015191 - Time: 38.897525787353516 seconds
+
+What is the aurora borealis?
+NDCG: 0.53532305568371 - Time: 94.55658435821533 seconds
+
+What is the concept of inertia in physics?
+NDCG: 0.6046514752578782 - Time: 66.41893482208252 seconds
+
+What is the Fibonacci sequence?
+NDCG: 0.6564971124124312 - Time: 126.43445301055908 seconds
+
+What is the millennium bug?
+NDCG: 0.2869030279858756 - Time: 99.62884473800659 seconds
+
+what is the most sold music album?
+NDCG: 1.0 - Time: 132.18873286247253 seconds
+
+When did humans first land on the Moon?
+NDCG: 0.7903864795495061 - Time: 139.39672660827637 seconds
+
+When did the berlin wall fall?
+NDCG: 0.4306765580733929 - Time: 125.13062834739685 seconds
+
+When did the Industrial Revolution begin?
+NDCG: 0.4267217339587573 - Time: 97.4750235080719 seconds
+
+When did the internet become publicly available?
+NDCG: 0.5034795357996952 - Time: 112.75520873069763 seconds
+
+When did the Protestant Reformation begin?
+NDCG: 0.29858499221913026 - Time: 112.70952486991882 seconds
+
+When did World War II end?
+NDCG: 0.6309297535714573 - Time: 196.86249017715454 seconds
+
+When was the car invented?
+NDCG: 0.39391884656340526 - Time: 105.86663556098938 seconds
+
+When was the Declaration of Independence signed?
+NDCG: 0.6366255518475715 - Time: 107.64393949508667 seconds
+
+When was the fall of the Roman Empire?
+NDCG: 0.3654477774845744 - Time: 146.55934977531433 seconds
+
+When was the first computer virus discovered?
+NDCG: 0.38188058952797665 - Time: 96.29854559898376 seconds
+
+When was the first modern Olympic Games held?
+NDCG: 0.5828330539865142 - Time: 117.37645936012268 seconds
+
+When was the first vaccine developed?
+NDCG: 0.4595559438886379 - Time: 84.06625151634216 seconds
+
+When was the invention of the printing press?
+NDCG: 0.5855254427692189 - Time: 117.51063966751099 seconds
+
+When was the start of the Great Depression?
+NDCG: 0.3425283045947739 - Time: 144.25039792060852 seconds
+
+Where is Sicily?
+NDCG: 0.42710186382992255 - Time: 91.41328430175781 seconds
+
+Where is the Colosseum?
+NDCG: 0.2642233085160766 - Time: 179.84937047958374 seconds
+
+Who invented the telephone?
+NDCG: 0.3215796011667687 - Time: 161.08606028556824 seconds
+
+Who is Tom Riddle?
+NDCG: 0.38685280723454163 - Time: 182.11152815818787 seconds
+
