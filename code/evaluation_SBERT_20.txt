@@ -1,126 +1,90 @@
 What are the ingredients for pizza?
-1.0
+NDCG: 1.0 - Time: 1.573451042175293
 
 what are the causes of second world war?
-0.8297784953125085
+NDCG: 0.8297784953125085 - Time: 0.42749667167663574
 
 what are the main fields of linguistics?
-0.5895758467452823
+NDCG: 0.5895758467452823 - Time: 0.7633261680603027
 
 what is a semantic parser?
-0.8612576822271697
+NDCG: 0.8612576822271697 - Time: 0.2857177257537842
 
 What is a software?
-0.9542412488939049
+NDCG: 0.9542412488939049 - Time: 0.4089775085449219
 
 what is python?
-0.8531776795146804
+NDCG: 0.8531776795146804 - Time: 0.3517262935638428
 
 What is Semantic?
-0.8537525924523788
+NDCG: 0.8537525924523788 - Time: 0.17307543754577637
 
 What is the aurora borealis?
-0.8048889771807055
+NDCG: 0.8048889771807055 - Time: 0.3250093460083008
 
 What is the concept of inertia in physics?
-0.9464000403233634
+NDCG: 0.9464000403233634 - Time: 0.2709801197052002
 
 What is the Fibonacci sequence?
-0.8800937667159344
+NDCG: 0.8800937667159344 - Time: 0.4880061149597168
 
 What is the millennium bug?
-0.7601875334318686
+NDCG: 0.7601875334318686 - Time: 0.3795197010040283
 
 what is the most sold music album?
-0.4306765580733929
-
-What are the ingredients for pizza?
-1.0
-
-what are the causes of second world war?
-0.8297784953125085
-
-what are the main fields of linguistics?
-0.5895758467452823
-
-what is a semantic parser?
-0.8612576822271697
-
-What is a software?
-0.9542412488939049
-
-what is python?
-0.8531776795146804
-
-What is Semantic?
-0.8537525924523788
-
-What is the aurora borealis?
-0.8048889771807055
-
-What is the concept of inertia in physics?
-0.9464000403233634
-
-What is the Fibonacci sequence?
-0.8800937667159344
-
-What is the millennium bug?
-0.7601875334318686
-
-what is the most sold music album?
-0.4306765580733929
+NDCG: 0.4306765580733929 - Time: 0.47438788414001465
 
 When did humans first land on the Moon?
-1.0
+NDCG: 1.0 - Time: 0.5205240249633789
 
 When did the berlin wall fall?
-1.0
+NDCG: 1.0 - Time: 0.8577940464019775
 
 When did the Industrial Revolution begin?
-0.7184739924757846
+NDCG: 0.7184739924757846 - Time: 0.4275319576263428
 
 When did the internet become publicly available?
-0.6070176828273359
+NDCG: 0.6070176828273359 - Time: 0.4570786952972412
 
 When did the Protestant Reformation begin?
-0.49320831104542107
+NDCG: 0.49320831104542107 - Time: 0.3840444087982178
 
 When did World War II end?
-1.0
+NDCG: 1.0 - Time: 0.45368051528930664
 
 When was the car invented?
-0.9565509700359796
+NDCG: 0.9565509700359796 - Time: 0.26010966300964355
 
 When was the Declaration of Independence signed?
-0.886569432314106
+NDCG: 0.886569432314106 - Time: 0.3278069496154785
 
 When was the fall of the Roman Empire?
-0.3706656904013185
+NDCG: 0.3706656904013185 - Time: 0.4245014190673828
 
 When was the first computer virus discovered?
-0.4351129134012763
+NDCG: 0.4351129134012763 - Time: 0.4127840995788574
 
 When was the first modern Olympic Games held?
-0.6812826204542067
+NDCG: 0.6812826204542067 - Time: 0.740077018737793
 
 When was the first vaccine developed?
-0.626665273802673
+NDCG: 0.626665273802673 - Time: 0.35109949111938477
 
 When was the invention of the printing press?
-0.8496649940318991
+NDCG: 0.8496649940318991 - Time: 0.31123948097229004
 
 When was the start of the Great Depression?
-0.6508780296742859
+NDCG: 0.6508780296742859 - Time: 0.39298391342163086
 
 Where is Sicily?
-0.9417913235821875
+NDCG: 0.9417913235821875 - Time: 0.44654321670532227
 
 Where is the Colosseum?
-0.8955796649110443
+NDCG: 0.8955796649110443 - Time: 0.533491849899292
 
 Who invented the telephone?
-1.0
+NDCG: 1.0 - Time: 0.3564298152923584
 
 Who is Tom Riddle?
-1.0
+NDCG: 1.0 - Time: 0.5492074489593506
 
