@@ -16,7 +16,7 @@ def app():
         
         # get results
         # sys.stdout = open(os.devnull, 'w') # disable writing to stdout (printing) FIXME
-        results = SemReply.ask(question, n_answers=10, n_sentences=10, skim_sentences=False)
+        results = SemReply.ask(question, n_answers=10, n_sentences=10, skim=False, prerank=True)
         # sys.stdout = sys.__stdout__ # enable writing to stdout FIXME
         
         # print results
