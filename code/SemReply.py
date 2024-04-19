@@ -47,7 +47,7 @@ class SemReply:
         elif skim:
             sentences = SemReply._skim_sentences(sentences, query_amr)
         elif prerank:
-            sentences = SemReply._prerank_sentences(sentences, query_amr)
+            sentences = SemReply._prerank_sentences(sentences, query_amr, k=n_answers)
         # compute smatch F score between question and sentences
         return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
 
@@ -132,6 +132,7 @@ class SemReply:
         lemmas = set()
         for concept in [rel_unknown] + siblings_unknown:
             lemmas.add(concept.split("-")[0])
+        print(lemmas)
         return lemmas
     
     
