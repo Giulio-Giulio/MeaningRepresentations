@@ -1,4 +1,4 @@
-from SemReply import SemReply
+from ..SemReply import SemReply
 
 import amrlib
 from sklearn.metrics import ndcg_score
