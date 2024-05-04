@@ -7,6 +7,9 @@ FILES = {
     "Smatch": "evaluation_SMATCH_20.csv"
     }
 
+GREEN = "#3CDF58"
+BLUE = "#3CC4DF"
+
 # load data
 ndcg = dict()
 time = dict()
@@ -30,9 +33,9 @@ fig, (ax1, ax2) = plt.subplots(2, sharex=True, sharey=True)
 fig.suptitle("Ranking Performance", fontweight="bold")
 fig.text(0.5, 0.04, "Normalized Discounted Cumulative Gain (NDCG)", ha="center")
 fig.text(0.04, 0.5, "N samples", va="center", rotation="vertical")
-ax1.hist(sorted(ndcg["SBERT"]), color="#4dff4d")
+ax1.hist(sorted(ndcg["SBERT"]), color=GREEN)
 ax1.set_title("SBERT")
-ax2.hist(sorted(ndcg["Smatch"]), color="#6699ff")
+ax2.hist(sorted(ndcg["Smatch"]), color=BLUE)
 ax2.set_title("Smatch")
 plt.show()
 
@@ -44,9 +47,9 @@ fig, (ax1, ax2) = plt.subplots(2, sharey=True)
 fig.suptitle("Time Performance", fontweight="bold")
 fig.text(0.5, 0.04, "Time (seconds)", ha="center")
 fig.text(0.04, 0.5, "N samples", va="center", rotation="vertical")
-ax1.hist(sorted(time["SBERT"])[:-1], color="#4dff4d") # remove outlier due to initialization of model during timing
+ax1.hist(sorted(time["SBERT"])[:-1], color=GREEN) # remove outlier due to initialization of model during timing
 ax1.set_title("SBERT")
-ax2.hist(sorted(time["Smatch"]), color="#6699ff")
+ax2.hist(sorted(time["Smatch"]), color=BLUE)
 ax2.set_title("Smatch")
 plt.show()
 
@@ -58,8 +61,8 @@ fig, (ax1, ax2) = plt.subplots(2, sharex=True, sharey=True)
 fig.suptitle("Time Performance", fontweight="bold")
 fig.text(0.5, 0.04, "Time (log seconds)", ha="center")
 fig.text(0.04, 0.5, "N samples", va="center", rotation="vertical")
-ax1.hist(sorted(np.log(time["SBERT"]))[:-1], color="#4dff4d") # remove outlier due to initialization of model during timing
+ax1.hist(sorted(np.log(time["SBERT"]))[:-1], color=GREEN) # remove outlier due to initialization of model during timing
 ax1.set_title("SBERT")
-ax2.hist(sorted(np.log(time["Smatch"])), color="#6699ff")
+ax2.hist(sorted(np.log(time["Smatch"])), color=BLUE)
 ax2.set_title("Smatch")
 plt.show()
