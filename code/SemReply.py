@@ -47,7 +47,7 @@ class SemReply:
         elif skim:
             sentences = SemReply._skim_sentences(sentences, query_amr)
         elif prerank:
-            sentences = SemReply._prerank_sentences(sentences, query_amr, k=n_answers)
+            sentences = SemReply._prerank_sentences(sentences, query_amr, n_output=n_answers)
         # compute smatch F score between question and sentences
         return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
 
@@ -60,10 +60,13 @@ class SemReply:
         print("Computing SMATCH scores...")
         sent2f = dict() # sentence idx to F score
         for i, search_amr in enumerate(search_amrs):
-            search_amr = " ".join(search_amr.split("\n")[1:]) # remove initial comment line
-            best_match_num, test_triple_num, gold_triple_num = smatch.get_amr_match(query_amr, search_amr)
-            f_score = smatch.compute_f(best_match_num, test_triple_num, gold_triple_num)
-            sent2f.update({i: f_score})
+            try:
+                search_amr = " ".join(search_amr.split("\n")[1:]) # remove initial comment line
+                best_match_num, test_triple_num, gold_triple_num = smatch.get_amr_match(query_amr, search_amr)
+                f_score = smatch.compute_f(best_match_num, test_triple_num, gold_triple_num)
+                sent2f.update({i: f_score})
+            except:
+                print("Skipped sentence", i)
         # rank article sentences based on F score
         top_matches = sorted(sent2f.items(), key=lambda x: x[1][2], reverse=True)[:n_answers]
         if return_scores:
