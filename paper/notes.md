@@ -30,3 +30,6 @@ Meeting:
 - Preparse of data (wikipedia)
 - Lemma-ranked skimming
 - Lemma from question rather than AMR extraction
+
+DISCLAIMER:
+- Smatch system can be used in a more informed way by developing a strategy based on the AMRs to find the best answers, while the SBERt system remains more blackbox and less customizable.
