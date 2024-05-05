@@ -49,7 +49,7 @@ class SemReply:
         elif prerank:
             sentences = SemReply._prerank_sentences(sentences, query_amr, n_output=n_answers)
         # compute smatch F score between question and sentences
-        return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores)
+        return SemReply.score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores), url
 
 
     def score_sentences(sentences, model, query_amr, n_sentences, n_answers, return_scores):
