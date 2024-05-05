@@ -10,10 +10,15 @@ ANSI = {
 }
 
 
-def app():
+def app(n_answers=3, n_sentences=-1):
     """
-    Terminal interface for SemReply.
+     Terminal interface for SemReply.
+
+    Args:
+        n_answers (int, optional): Number of top answers shown. Defaults to 3.
+        n_sentences (int, optional): Number of article sentences taken into analysis in order of appearance. Defaults to -1 (all).
     """
+    print(ANSI["gray"] + f"\n[Currently set on {n_answers} answers]")
     prompt = "x"
     while prompt.strip():
         # prompt user
@@ -28,7 +33,7 @@ def app():
         
         # get results
         sys.stdout = open(os.devnull, 'w') # disable writing to stdout (printing) FIXME
-        results, url = SemReply.ask(question, n_answers=5, n_sentences=-1, skim=False, prerank=False)
+        results, url = SemReply.ask(question, n_answers=n_answers, n_sentences=n_sentences, skim=False, prerank=False)
         sys.stdout = sys.__stdout__ # enable writing to stdout FIXME
         
         # print results
@@ -39,4 +44,4 @@ def app():
 
 
 if __name__ == "__main__":
-    app()
+    app(n_answers=3, n_sentences=20)
